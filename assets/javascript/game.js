@@ -50,14 +50,14 @@ console.log(computerChoice);
      
     }
  
-  else if (userGuess !== computerChoice && guessesLeft > 0) {
+else if (userGuess !== computerChoice && guessesLeft > 0) {
     console.log ("Wrong!");    
     guessesSoFar.push(userGuess);
     guessesLeft--;
      var computerChoice = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
     }
-  else if (guessesLeft === 0) {
+ if (guessesLeft === 0) {
       alert("You Lose!");
       losses++;
       guessesLeft = 9;
